@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      .jumb{
+            margin-top: 35px;
+        }
+        .jumb2{
+            margin-top: 10px;
+        }
+        .jumb4{
+            margin-top: 20px;
+        }
+        .jumb5{
+            margin-top: 20px;
+        }
+        .jumb6{
+            margin-top: 20px;
+        }
+        .no-gutter>[class*='col-']{
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+          margin-right: 0 !important;
+          margin-left: 0 !important;
+        }
+        .card1{
+          transition: transform .5s;
+        }
+        .card1:hover{
+          transform: scale(1.1);
+          background-color: white !important;
+        }
+        .card1{
+          border: 0 !important;
+        }
+        .text-body-emphasis{
+          text-align: center;
+        }
+        .rev{
+          margin-left: 6%;
+          margin-right: 2%;
+          border-radius: 50%;
+          float: left;
+        }
+        .text-center1{
+          text-align: left !important;
+        }
+        .name{
+          font-size: smaller !important;
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+          border: 0 !important;
+        }
+        .card2:hover{
+          background-color: white !important;
+        }
+        .container-footer{
+          width: 100% !important;
+          background-color: #232323;
+          color: white;
+          margin: 0 !important;
+          padding: 0 !important;
+          border: 0  !important;
+        }
+        .form-control{
+          color: rgba(0,0,0,0.87) !important;
+          border-bottom-color: rgba(255, 255, 255, 0.3) !important;
+          background-color: #232323;
+          box-shadow: none !important;
+          border: none;
+          border-bottom: 1px solid;
+          border-radius: 4px 4px 0 0;        
+        }
+        .form-label{
+          font-weight: 100;
+        }
+        .rounded-pill{
+          background-color: #83b735;
+          
+        }
+        .btndiff{
+          background-color: white;
+          border-color: #83b735;
+          color: #83b735;
+        }
+        .foottext{
+          font-size: 30px;
+          font-family: sans-serif;
+        }
+        .foottext2{
+          font-size: 17px;
+          font-family: sans-serif;
+          font-weight: lighter;
+        }
+        .foot2{
+          background: #232323;
+          color: white;
+        }
+        .logo{
+          font-family: sans-serif;
+          font-weight: bolder;
+          font-size: larger;
+        }
+        .card-img-top{
+          width: 50px !important;
+          margin-left: 40% !important;
+        }
+        .smicons{
+          border-radius: 50%;
+        }
+        .nobold{
+          font-weight: lighter;
+          color: gray;
+        }
+        .foottext22{
+          font-size: 20px;
+          font-family: sans-serif;
+          font-weight: bold;
+          color: white !important;
+        }
+        .container-footer2{
+          display: flex;
+          flex-direction: column;
+          background-color: #232323;
+        }
+        .but{
+          background-color: #232323;
+        }
+        .text-body-secondary{
+          color: gray !important;
+        }
+        .last{
+          color: white !important;
+        }
+        .logolast{
+          font-family: sans-serif;
+          font-weight: bolder;
+          color: white;
+          font-size: x-large;
+        }
+        .foottext22l{
+          color: gray;
+        }
+        .foottext222{
+          color: gray;
+        }
+        .logo{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: xx-large;
+      }
+        .serv{
+            padding: 20px;
+        }
+        
+        .butclr{
+            background-color: #83b735;
+        }
+        .butclr2{
+            border: darkblue solid;
+        }
+        .container-fluid{
+          margin-left: 100px !important;
+          margin-right: 100px !important;
+        }
+        .newtext{
+          font-size: 25px;
+        }
+        .new2{
+          color: black;
+        }
+        @media(max-width:750px){
+          body{
+            width: 100%;
+            padding: 20px !important;
+            margin: 0 !important;
+            border: 0 !important;
+          }
+          .p-5{
+            padding: 0 !important;
+          }
+          .pt-5{
+            padding-top: 1rem !important;
+          }
+          .px-5{
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+          }
+          .flex1{
+            display: block;
+
+          }
+          .pr{
+            padding-right: 0 !important;
+            margin-left: 25px !important;
+          }
+          .foottext, .foottext2{
+            text-align: center !important;
+          }
+          .purple{
+            text-align: right !important;
+          }
+          .mb-3{
+            margin-bottom: 2rem !important;
+          }
+          .centre{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .text-center2{
+            text-align:center !important ;
+          }
+          .logo, .navbar-toggler{
+            text-align: center !important;
+            margin-left: 10px !important;
+          }
+         .navbar-toggler{
+            justify-content: center !important;
+            align-items: center !important;
+            margin-left: 25px !important;
+          }
+        }
+        @media(max-width:300px){
+          .container-fluid{
+           margin-left: 35px !important;
+           margin-right:  !important;
+           text-align: center !important;
+
+          }
+         .navbar-toggler{
+            justify-content: center !important;
+            align-items: center !important;
+            margin-left: 35px !important;
+          }
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="logo navbar-brand col-md-4 mb-2 mb-md-0" href="#">Besnik.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="newtext nav-link active" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="newtext nav-link active" href="#">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="newtext nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul> 
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-end mb-md-0">
+          <li class="nav-item dropdown">
+              <a class="newtext new2 dropdown-toggle active px-2 link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          <button class="newtext btn btn-success rounded-pill butclr" type="submit">Contact us</button>
+        </ul>
+          
+      </div>
+    </div>
+  </nav>
+      <div class="container col-xxl-8 px-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 pt-0 ">
+          <div class="col-10 col-sm-12 col-lg-6 align-items-center">
+            <img src="./mainimg.jpeg" class="d-block mx-lg-auto img-fluid pr" width="700px" height="400px" alt="Bootstrap Themes" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center1 text-center2">Find & Hire Expert Freelancers </h1>
+            <p class="lead text-center1 text-center2">Work with the best freelance talent around the world on our secure,flexible and cost-effictive platform.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary rounded-pill btn-lg px-4 me-md-2">Contact us</button>
+              <button type="button" class="btn btn-outline rounded-pill btndiff  btn-lg px-4">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="p-5 text-center bg-white ">
+          <div class="container pt-4">
+            <h4 class="text-body-emphasis nobold">SOME OF OUR TRUSTED CLIENTS</h4>
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-2 col-sm-12 jumb">
+                    <img src="./stripe logo.png" alt="techcrunch" height="40">
+                  </div>
+                  <div class="col-lg-2 col-sm-12 jumb2">
+                    <img src="./Google-logo.png" alt="mashable" height="100">
+                  </div>
+                  <div class="col-lg-2 col-sm-12 jumb3">
+                    <img src="./deloitte-logo.png" alt="bizinsider" height="90">
+                  </div>
+                  <div class="col-lg-2 col-sm-12 jumb4">
+                    <img src="./accenture logo.png" alt="tnw" height="50">
+                  </div>
+                  <div class="col-lg-2 col-sm-12 jumb5">
+                    <img src="./ibm logo.png" alt="tnw" height="50">
+                  </div>
+                  <div class="col-lg-2 col-sm-12 jumb6">
+                    <img src="./samsung logo.jpg" alt="tnw" height="50">
+                  </div>
+          </div>
+        </div>
+    </div>
+    <div class="p-5 text-center bg-white">
+      <div class="container py-1">
+        <h1 class="text-body-emphasis">What we do</h1>
+        <p class="col-lg-8 mx-auto lead">
+          Starting with a realistic project of your digital marketing,creative and development needs we'll recommend flexible solutions.
+        </p>
+      </div>
+    </div>
+    <div class="container padd pt-5 pb-3 px-5 bg-white ">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card card1 h-100 mx-0 px-5 bg-body-tertiary">
+            <img src="./comp.png" class="card-img-top centre" alt="...">
+            <div class="card-body">
+              <h5 class="card-title centre">Programming &<br /> Development</h5>
+              <p class="card-text centre">542,730 Freelancers</p>
+              <a href="#" class="centre">Learn more></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card1 h-100 mx-0 px-5 bg-body-tertiary">
+            <img src="./pen-and-paper.png" class="centre card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title centre">Writing &<br /> Translation</h5>
+              <p class="card-text centre">407,825 Freelancers</p>
+              <a href="#" class="centre">Learn more></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card1 h-100 mx-0 px-5 bg-body-tertiary">
+            <img src="./pen.png" class="card-img-top centre" alt="...">
+            <div class="card-body">
+              <h5 class="card-title centre">Design &<br /> Art</h5>
+              <p class="card-text centre">336,229 Freelancers</p>
+              <a href="#" class="centre">Learn more></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container padd px-5 pb-5 bg-white">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card card1 h-100 mx-0 px-5 bg-body-tertiary">
+            <img src="./diagram.png" class="centre card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title centre">Business &<br /> Finance</h5>
+              <p class="card-text centre">109,825 Freelancers</p>
+              <a href="#" class="centre">Learn more></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card1 h-100 mx-0 px-5 bg-body-tertiary">
+            <img src="./graduate-hat.png" class="centre card-img-top card-img-top2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title centre">Education &<br /> Training</h5>
+              <p class="card-text centre">5918 Freelancers</p>
+              <a href="#" class="centre">Learn more></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card1 h-100 mx-0 px-5 bg-body-tertiary">
+            <img src="./horn.png" class="card-img-top centre" alt="...">
+            <div class="card-body">
+              <h5 class="card-title centre">Sales &<br /> Marketing</h5>
+              <p class="card-text centre">542,730 Freelancers</p>
+              <a href="#" class="centre">Learn more></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-5 text-center bg-white">
+      <div class="container py-1">
+        <h1 class="text-body-emphasis">Check our Satisfied Clients</h1>
+      </div>
+    </div>
+    <div class="container padd pt-5 pb-3 px-5 bg-white ">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="card card2 h-100 mx-0 px-0 bg-body-tertiary text-center1">
+            <div class="card-body">
+              <p class="card-text pt-5 px-5">our company,we do ongoing research with our target audience.This includes30-40 minute phone interviews.it was difficult to conduct the interviews really faster and ask good follow-up questions</p>
+              <img src="./face1.jpg" class="rev " width="45px" height="45px" />
+              <h6 >Chan</h6>
+              <p class="name">Product desiner-Besnik</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card2 h-100 mx-0 px-0 bg-body-tertiary text-center1">
+            <div class="card-body">
+              <p class="card-text pt-5 px-5">.We meet new clients and more often that not establish long-term business relationships all through govt.The flexibity is how projects can be constructed</p>
+              <img src="./face2.jpg" class="rev" width="45px" height="45px" />
+              <h6>Scopic Software</h6>
+              <p class="name">Christan IT Bickens Firm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container padd px-5 pb-5 bg-white">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="card card2 h-100 mx-0 px-0 py-3 bg-body-tertiary text-center1">
+            <div class="card-body">
+              <p class="card-text pt-5 px-5">Its easy to communicute with clients through the message system and their safe-pay feature ensures that all funds are secure prior to any work being done.</p>
+              <img src="./face3.jpg" class="rev" width="45px" height="45px" />
+              <h6>Russel Lee</h6>
+              <p class="name">Vidq</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card2 h-100 mx-0 px-0 py-3 bg-body-tertiary text-center1">
+            <div class="card-body">
+              <p class="card-text pt-5 px-5">At Solace Engineers,we provide engineering solutions and other services on various freelancing platforms.Among them all Guru is the best and our first choive to invite clients.</p>
+              <img src="./face4.jpg" class="rev" width="45px" height="45px" />
+              <h6>Solace Engineers Inc.</h6>
+              <p class="name">Engineering Firm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section data-bs-version="5.1" class="form1 programm5 cid-tFckYMCjRP" id="form1-c">
+
+    
+
+    
+    
+      <div class="container-footer">
+        <div class="container footer">
+            <div class="row py-5 pr-5">
+                <div class="col-12 col-lg-6 text-center1 foottext px-5">
+                    <div class="title-wrapper">
+                        <h2 class="foottext mbr-section-title mbr-fonts-style display-2 ">
+                            We'd Love to have you join us
+                        </h2>
+                        <h6 class="foottext2">You didn't become a freelancer to spend hours every week hunched in front of your computer screening through endless job listings.</h6>
+                        <p class="foottext2 mbr-desc mbr-fonts-style display-7 pt-5 pb-0 text-center1">
+                            Social media
+                        </p>
+                        <div class="person-wrapper">
+                            <div class="person-wrap">
+                                <img src="./tel.jpeg" width="30px" height="30px" class="smicons foottext2 pb-1" alt="">
+                                <img src="./twit.jpeg" width="30px" height="30px" class="smicons foottext2 pb-1"/>
+                                <img src="./dis.jpeg" width="30px" height="30px" class="smicons foottext2 pb-1" />
+                                <img src="./m.jpeg" width="30px" height="30px" class="smicons foottext2 pb-1"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-lg-6 mx-auto mbr-form px-5" data-form-type="formoid">
+                    <form action="" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="hUEOPgtZunHhH4w+QEVmy17mR1joURcx5iKbXYPjyO040lHQVYj8ELjsngj4wdjcTL77R9axTWxvRxg81MzsH2cNaK9h2yTX8ssQWU5SGFTFj4js6igK34VZhu+WQ+rv.VjPxW4ICOvaP4CY4aJmkGRNLA9lNoDmUVTID1v9oOSSQ3vvNPNnMqCfeTeXQHJSscJ1JO2lgy3VdTRX6bUtgsLV4PWzNRcVB5H4Ez2T1l77D8+Y4CymIStQPdXGhXf4N">
+                        <div class="row">
+                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
+                                out the form!</div>
+                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some
+                                problem!
+                            </div>
+                        </div>
+                        <div class="dragArea row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 text-center1 " data-for="name">
+                                <h2 class="pb1-2">Contact us</h2>
+                                <label for="disabledTextInput" class="form-label pt-1" text-left>NAME</label>
+                                <input type="text" name="name" placeholder="" data-form-field="name" class="form-control display-7" value="" id="name-form1-c">
+                            </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 text-center1" data-for="email">
+                              <label for="disabledTextInput" class="form-label">MAIL</label>
+                                <input type="email" name="email" placeholder="" data-form-field="email" class="form-control display-7" value="" id="email-form1-c">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3 text-center1" data-for="textarea">
+                              <label for="disabledTextInput" class="form-label">Your message</label>
+                                <textarea name="textarea" placeholder="" data-form-field="textarea" class="form-control display-7" id="textarea-form1-c"></textarea>
+                            </div>
+                            <div class="col-md-auto col mbr-section-btn text-center1 purple">
+                              <button class="btn purple rounded-pill px-4" type="button">Contact us</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-footer2">
+      <footer class="py-5 px-5 border-top mainflex">
+        <div class="row ">
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="last">Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="last">Resources</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5 class="last">Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5 class="last text-center1">Get in touch</h5>
+              <p class="foottext222 text-center1">You'll find your best freelanceyou prefer.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="password" id="inputPassword6" placeholder="Email" class="form-control1" aria-describedby="passwordHelpInline">
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 ">
+          <p class="logolast px-5 mx-3" >Besnik.</p>
+          <p class="foottext22l">© 2023 Company, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
